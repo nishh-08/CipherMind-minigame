@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherMind | Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs"></div>
+
+    <section id="intro-page" class="active">
+        <div class="glass-card animate-pop">
+            <h1 class="logo-text">Cipher<span>Mind</span></h1>
+            <p>Can you crack the code in 10 attempts?</p>
+            <button id="start-btn" class="glow-button">Enter Terminal</button>
+        </div>
+    </section>
+
+    <section id="game-page">
+        <div class="glass-card">
+            <h2>Guess the Number</h2>
+            <p>Pick a number between 1 and 100</p>
+            
+            <div class="stats-row">
+                <div class="stat-item">Chances: <span id="chances">10</span></div>
+                <div class="stat-item">Previous: <span id="prev-guess">-</span></div>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="user-input" placeholder="00" min="1" max="100">
+                <button id="guess-btn">Guess</button>
+            </div>
+
+            <div id="feedback" class="feedback-msg">Waiting for your move...</div>
+            <button id="reset-btn" class="hidden">Play Again</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
